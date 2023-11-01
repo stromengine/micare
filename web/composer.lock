@@ -20,9 +20,6 @@
                 "reference": "f03270e63eaccf3019ef0f32849c497385774e11",
                 "shasum": ""
             },
-            "require": {
-                "php": "^7.4||^8.0"
-            },
             "require-dev": {
                 "guzzlehttp/guzzle": "^6.5||^7.4",
                 "phpspec/prophecy-phpunit": "^2.0",
