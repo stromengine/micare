@@ -1,9 +1,11 @@
-runtime: php74
+runtime: php
 env: flex
 
 runtime_config:
-  runtime_version: "7.4.*"
+  runtime: "7.4.*"
+  operating_system: "ubuntu22"
   document_root: web
+
 
 # This sample incurs costs to run on the App Engine flexible environment.
 # The settings below are to reduce costs during testing and are not appropriate
