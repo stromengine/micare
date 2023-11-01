@@ -5,7 +5,6 @@ runtime_config:
   runtime: "7.4.*"
   operating_system: "ubuntu22"
   document_root: web
-entrypoint: serve /router.php
 
 # This sample incurs costs to run on the App Engine flexible environment.
 # The settings below are to reduce costs during testing and are not appropriate
@@ -17,3 +16,9 @@ resources:
   cpu: 1
   memory_gb: 0.5
   disk_size_gb: 10
+
+handlers:
+- url: /services/(.*\.php)$
+  static_files: services/\1
+  upload: services/(.*\.php)
+  secure: always
