@@ -17,8 +17,3 @@ resources:
   memory_gb: 0.5
   disk_size_gb: 10
 
-handlers:
-- url: /services/(.*\.php)$
-  static_files: services/\1
-  upload: services/(.*\.php)
-  secure: always
