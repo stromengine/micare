@@ -18,12 +18,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit(0);
 }
 // Database connection parameters
-$dbHost = '35.240.129.239';
+$dbHost = 'localhost';
 //$dbHost = '127.0.0.1';
 // $dbHost = '/cloudsql/micare-pk:asia-southeast1:test-micare-db';
 $dbPort = '5432';
-$dbName = 'micare_prod';
-$dbUser = 'remote';
+$dbName = 'postgres';
+$dbUser = 'postgres';
 $dbPass = 'Rspn@123';
 // micare-pk:asia-southeast1:test-micare-db
 // Connect to the database
